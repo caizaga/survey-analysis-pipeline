@@ -20,7 +20,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 STAGING_DIR = BASE_DIR / "staging"
 
-N = 346
+N = 1000
 SEED = 42
 
 COL_P11 = (
