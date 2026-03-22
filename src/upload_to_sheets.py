@@ -13,8 +13,10 @@ import os
 import gspread
 import pandas as pd
 from pathlib import Path
+from dotenv import load_dotenv
 from gspread_dataframe import set_with_dataframe
 
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 SPREADSHEET_ID = os.environ["SHEETS_OUTPUT_ID"]
 BASE_DIR = Path(__file__).resolve().parent.parent
 STAGING_DIR = BASE_DIR / "staging"

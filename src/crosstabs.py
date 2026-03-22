@@ -30,7 +30,7 @@ COL = {
     'gasto_salud'    : '14_gasto_en_salud_tomando_en_cuenta_el_uso_del_plan_salud_red',
     'promedio_gasto' : '15_promedio_mensual_de_presupuesto_gastado_en_salud_en_el_núcleo_familiar',
     'otros_seguros'  : '16_disponibilidad_de_otros_seguros_para_acceso_a_salud',
-    'percepcion_respaldo': '17_percepción_de_respaldo_en_acceso_a_la_salud_debido_a_la_afiliación_al_plan_salud_red',
+    'percepcion_respaldo': '17_percepción_de_respaldo_en_acceso_a_la_salud_debido_a_la_afiliación_al_plan_salud_red_de_salud',
 }
 
 # Etiquetas cortas para títulos en las hojas

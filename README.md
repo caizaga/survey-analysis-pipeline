@@ -1,6 +1,24 @@
 # Survey Analysis Pipeline
 
-Pipeline ETL completo para el procesamiento, limpieza y análisis de encuestas de campo, con exportación a Google Sheets y visualización en Looker Studio.
+Pipeline ETL completo para el procesamiento, limpieza y análisis de encuestas de campo aplicado a un estudio de impacto de microseguros de salud en población vulnerable. Incluye exportación a Google Sheets y visualización en Looker Studio.
+
+## Contexto del problema
+
+Los microseguros de salud buscan cubrir a poblaciones con acceso limitado a servicios médicos formales. Este proyecto analiza los resultados de una encuesta de campo aplicada a afiliados de un plan de salud, con el objetivo de responder tres preguntas concretas:
+
+1. **¿El seguro reduce la carga económica real de las familias?**
+2. **¿Los afiliados perciben una mejora en su situación de salud?**
+3. **¿Qué perfiles concentran mayor vulnerabilidad o menor aprovechamiento del plan?**
+
+## Hallazgos principales
+
+El análisis revela una historia en dos mitades: **el seguro cumple su promesa de acceso, pero no ha resuelto la ansiedad de sus afiliados.**
+
+**El impacto económico es real, especialmente en los más vulnerables.** El segmento de menor ingreso (menos de 1 SBU) reporta mayoritariamente un menor gasto en salud desde su afiliación. Este efecto es aún más significativo considerando que el 45% de los encuestados no dispone de ningún otro seguro — para ellos, este plan no es una opción complementaria, es su única red de protección.
+
+**El uso sigue siendo reactivo, no preventivo.** Solo 1 de cada 5 afiliados acude a chequeos de forma regular; el 38% lo hace únicamente ante emergencias. Los datos muestran una correlación positiva entre uso preventivo y mejor percepción del estado de salud, lo que sugiere que promover el acceso proactivo al sistema tendría un impacto directo en los resultados del plan.
+
+**El 28% más revelador no está insatisfecho — está ansioso.** Una cuarta parte de los afiliados declara saber que cuenta con el servicio, pero sigue preocupado por su situación de salud. Este grupo no representa un problema de cobertura: representa un problema de acompañamiento. Confundir ambos llevaría a tomar decisiones incorrectas.
 
 ## ¿Qué hace?
 
@@ -67,7 +85,7 @@ cp .env.example .env
 python src/generate_fake_data.py
 ```
 
-Esto crea `staging/survey_staging_fake.xlsx` con 346 registros ficticios y distribuciones plausibles.
+Esto crea `staging/survey_staging_fake.xlsx` con 1000 registros ficticios y distribuciones plausibles.
 
 ### 5. Correr el análisis
 

@@ -1,5 +1,5 @@
 google_sheets:
-  spreadsheet_id: "TU_SPREADSHEET_ID_FUENTE"
-  sheet_name: "Hoja1"
+  spreadsheet_id: "1SR7_d23RfoBjvybdE2ERFCkQhdvO6xDNCqsA7YTJd90"
+  sheet_name: "data"
   # Rango opcional, ej: "A1:Z1000". Si se deja vacío trae toda la hoja.
   range: ""
