@@ -1,8 +1,8 @@
 """
 generate_fake_data.py
-Genera un dataset sintético de 346 encuestas con distribuciones plausibles
+Genera un dataset sintético de 1000 encuestas con distribuciones plausibles
 pero ficticias. Reemplaza fetch_survey.py + transform_columns.py para uso
-en portafolio sin exponer datos reales del cliente.
+en portafolio con datos ficticios de libre distribución.
 
 Los datos se guardan directamente en staging/ con columnas ya normalizadas,
 de modo que EDA.ipynb puede correr desde la celda de lectura de staging

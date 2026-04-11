@@ -1,6 +1,8 @@
 # Survey Analysis Pipeline
 
-Pipeline ETL completo para el procesamiento, limpieza y análisis de encuestas de campo aplicado a un estudio de impacto de microseguros de salud en población vulnerable. Incluye exportación a Google Sheets y visualización en Looker Studio.
+Pipeline ETL para el procesamiento, limpieza y análisis de una encuesta de campo sobre impacto de microseguros de salud en población vulnerable. Cubre el flujo completo desde Google Forms hasta un dashboard en Looker Studio, pasando por limpieza, recodificación y tablas de cruce en Python.
+
+**Dashboard:** [Ver en Looker Studio](https://lookerstudio.google.com/reporting/597550ec-2ae1-4998-8595-81134096159d) · Dataset: 1 000 registros sintéticos con distribuciones realistas de un contexto latinoamericano
 
 ## Contexto del problema
 
@@ -12,13 +14,13 @@ Los microseguros de salud buscan cubrir a poblaciones con acceso limitado a serv
 
 ## Hallazgos principales
 
-El análisis revela una historia en dos mitades: **el seguro cumple su promesa de acceso, pero no ha resuelto la ansiedad de sus afiliados.**
+El análisis identifica tres tensiones centrales entre el diseño del plan y el comportamiento real de sus afiliados.
 
-**El impacto económico es real, especialmente en los más vulnerables.** El segmento de menor ingreso (menos de 1 SBU) reporta mayoritariamente un menor gasto en salud desde su afiliación. Este efecto es aún más significativo considerando que el 45% de los encuestados no dispone de ningún otro seguro — para ellos, este plan no es una opción complementaria, es su única red de protección.
+**Impacto económico positivo, pero concentrado.** El 43 % reporta menor gasto en salud desde la afiliación, con mayor intensidad en el segmento de ingreso bajo (menos de 1 SBU). Para el 45 % que no dispone de ningún otro seguro, el plan funciona como única red de protección — lo que eleva el costo social de cualquier discontinuidad en la cobertura.
 
-**El uso sigue siendo reactivo, no preventivo.** Solo 1 de cada 5 afiliados acude a chequeos de forma regular; el 38% lo hace únicamente ante emergencias. Los datos muestran una correlación positiva entre uso preventivo y mejor percepción del estado de salud, lo que sugiere que promover el acceso proactivo al sistema tendría un impacto directo en los resultados del plan.
+**Uso reactivo como patrón dominante.** El 72 % utilizó el plan en el último año, pero solo 1 de cada 5 afiliados accede de forma preventiva. El 38 % acude exclusivamente ante emergencias. Los datos sugieren que el diseño de acceso no está generando el cambio de comportamiento sanitario que justificaría el plan a largo plazo.
 
-**El 28% más revelador no está insatisfecho — está ansioso.** Una cuarta parte de los afiliados declara saber que cuenta con el servicio, pero sigue preocupado por su situación de salud. Este grupo no representa un problema de cobertura: representa un problema de acompañamiento. Confundir ambos llevaría a tomar decisiones incorrectas.
+**Cobertura percibida ≠ seguridad percibida.** Solo el 47 % se siente plenamente respaldado. El 28 % declara saber que cuenta con el servicio, pero mantiene preocupación activa por su situación de salud. Este segmento no requiere más cobertura — requiere acompañamiento. Tratarlo como problema de acceso llevaría a intervenciones equivocadas.
 
 ## ¿Qué hace?
 
